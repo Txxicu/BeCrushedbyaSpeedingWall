@@ -1,0 +1,12 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("[FREE LIMITED] Be Crushed by a Speeding Wall! | Txxicu Scripts", "RJTheme3")
+
+local Tab = Window:NewTab("Scripts")
+
+local Section = Tab:NewSection("Scripts")
+
+Section:NewButton("TP", "ButtonInfo", function()
+    print("Clicked")
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(19258.4414, 9223.22461, -7637.17529, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
